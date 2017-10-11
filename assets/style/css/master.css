@@ -1,0 +1,139 @@
+/*removing typed cursor*/
+.typed-cursor{
+  opacity: 0;
+}
+/*Body Begins*/
+body{
+  /*overflow: hidden;*/
+  overflow-x: hidden;
+  background-color: black;
+}
+/*Body Ends*/
+section{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border:1px solid white;
+  display: block;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+/*Front page Canvas Begins*/
+#canvas{
+  background-color: black;
+  padding-top: 20%;
+  padding-left:40%;
+}
+#logo{
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  border: 5px solid white;
+}
+#logo:hover{
+  font-weight: bold;
+}
+#hello {
+  font-size: 30px;
+  color:white;
+  margin-left: -100px;
+  padding:auto;
+}
+
+/*Font page Canvas Ends*/
+/*NAV Bar Custome Begins*/
+#nav{
+  background-color: black;
+  margin:0;
+  position: sticky;
+}
+/*Nav Bar Custom Ends*/
+
+/*Individual Sections Begins*/
+h1{
+  color: white;
+  text-shadow: 0px 0px 8px black, 0px 0px 2px white;
+  color: white;
+  text-align: center;
+  padding: 2% 4%;
+  border: 5px solid white;
+  font-size: 4em;
+}
+.center-block{
+  float:none;
+  margin-top:10%;
+}
+#about{
+  background-image: url("../images/background/2.jpg");
+}
+#about .center-block{
+  margin-top:3%;
+  margin-bottom: 6%;
+}
+#highlights{
+  background-image: url("../images/background/background2.jpg");
+}
+#portfolio{
+  background-image: url("../images/background/3.jpg");
+}
+#solution{
+  background-image: url("../images/background/solution.jpg");
+}
+
+#contact{
+  background-image: url("../images/background/background6.jpg");
+}
+#contact .center-block{
+  margin-top:3%;
+}
+
+.center-block strong{
+  color:white;
+  text-shadow: 0px 0px 8px black;
+  font-size: 3em;
+  text-align: right;
+  margin-left: auto;
+}
+/*Individual Sections Ends*/
+/*Footer Begins*/
+footer{
+  color:white; /*Change color*/
+  background-color: rgba(0,0,0,0.8);
+}
+footer p{
+  text-align: center;
+}
+footer .center-block{
+  margin: 4% 0;
+}
+/*Footer Ends*/
+
+@media only screen and (max-width:765px) {
+  .navbar-header{
+    display: none;
+  }
+  .container-fluid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  .navbar-nav{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+  }
+  .navbar-nav ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  #nav li{
+    flex-grow: 1;
+  }
+  .menu-text{
+    display: none;
+  }
+}
